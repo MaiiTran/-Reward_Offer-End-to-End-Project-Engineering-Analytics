@@ -12,8 +12,13 @@ Instruction to enable GG’s API: https://www.analyticsvidhya.com/blog/2020/07/r
 
 **3. Create Operators in DAG (Airflow)**.
 - Operator for data wrangling.
-  . Process null values: Use KNNImputer method.
+  + Process null values: Use KNNImputer method.
 - Operator for DAG monitoring.
   
-4. Once data successfully has been uploaded to S3, start Dremio with cmd _/opt/dremio/bin/dremio start_ and then add S3 as a Data Source in Dremio Using EC2 Metadata.
+**4. Connect S3 with Dremio**
+Once data successfully has been uploaded to S3, start Dremio with cmd _/opt/dremio/bin/dremio start_ and then add S3 as a Data Source in Dremio Using EC2 Metadata.
+
+**5. Analytics**
+Now, data is available for querying on Dremio. In case, you would like to create Dashboard/ Report then connect Dremio source with Power BI.
+
 
